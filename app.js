@@ -5,7 +5,7 @@
 // ======================================================
 
 // 🔴 Replace with your Google Apps Script /exec URL
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbygGlNA9lkv7eL56oAG_yOldH1LnG7SgcqUp0qIc3oMEBmT1oORnwV6AkdlSAYbVura/exec";
+const WEB_APP_URL = "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnTcEtwkuwbdpI2mf9UXyaSTmZB13MBqJwSe_U7bhn5ZrZS_num7zpgGi-zYDtg8CRuRyCTJQRzo4wQrP6Qch8Takr38cpa6UUtE9aSFWHDGrUqhw2lE-Jw2MeS33nGO1rMudWpQ2V_zwzvxxQ3rohw_FmSZAjPu6nN1l4tdjRrRxEMGKB3ftf3gWB9e-vk4731ZJe1Y1lejnf0PRAMxuPxtL3gyZFmDOkK8k09bFZzW42fvy0bMOFPN3TGpee4TGjc4VENB9FuMnGGnd6cIVPZTrP0Tqz1GsHxT11dN&lib=MTOSTAH0SnOuNdRLDEVQ0gACacH7OvK-z";
 
 // ======================================================
 // DOM ELEMENTS

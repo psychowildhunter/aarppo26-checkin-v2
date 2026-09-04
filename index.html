@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AARPPO '26 Check-In</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#0F7B42">
+
+</head>
+
+<body>
+
+<div class="background-pattern"></div>
+
+<div class="container">
+
+  <!-- ================= HERO ================= -->
+
+  <header class="hero">
+
+      <div class="hero-left">
+
+        <span class="hero-tag">YUVAKAIRALI PRESENTS</span>
+
+        <h1>AARPPO '26</h1>
+
+        <p>Annual Onam Celebration Check-In</p>
+
+      </div>
+
+      <div class="hero-right">
+
+        🌼
+
+      </div>
+
+  </header>
+
+  <!-- ================= LIVE DASHBOARD ================= -->
+
+  <section class="stats">
+
+      <div class="stat-card green">
+
+          <span>Checked In</span>
+
+          <h2 id="checkedCount">0</h2>
+
+      </div>
+
+      <div class="stat-card gold">
+
+          <span>Remaining</span>
+
+          <h2 id="remainingCount">0</h2>
+
+      </div>
+
+  </section>
+
+  <!-- ================= QR SCANNER ================= -->
+
+  <section class="scanner-card">
+
+      <div class="card-header">
+          <h3>QR Entry Scanner</h3>
+          <span class="live-dot"></span>
+      </div>
+
+      <div id="reader"></div>
+
+      <button id="startScanner" class="primary-btn">
+        Start Scanner
+      </button>
+
+  </section>
+
+  <!-- ================= SEARCH ================= -->
+
+  <section class="search-card">
+
+      <h3>Search Participant</h3>
+
+      <div class="search-box">
+
+          <input
+              id="searchInput"
+              type="text"
+              placeholder="Search by ARP26 ID or Name"
+          >
+
+          <button>Search</button>
+
+      </div>
+
+      <div id="searchResult"></div>
+
+  </section>
+
+  <!-- ================= RECENT CHECK-INS ================= -->
+
+  <section class="recent-card">
+
+      <div class="card-header">
+
+          <h3>Recent Check-Ins</h3>
+
+          <span class="badge-live">LIVE</span>
+
+      </div>
+
+      <div id="recentList"></div>
+
+  </section>
+
+  <footer>
+
+      <p>Crafted for Yuvakairali • AARPPO '26</p>
+
+      <small>Annual Onam Celebration</small>
+
+  </footer>
+
+</div>
+
+<!-- ================= RESULT OVERLAY ================= -->
+
+<div id="resultOverlay" class="overlay">
+
+  <div id="overlayCard" class="overlay-card">
+
+      <div id="overlayIcon" class="overlay-icon">✅</div>
+
+      <h2 id="overlayTitle">Welcome</h2>
+
+      <p id="overlaySubtitle">Entry Confirmed</p>
+
+      <div class="overlay-details">
+
+          <div class="detail-row">
+              <span>Name</span>
+              <strong id="overlayName"></strong>
+          </div>
+
+          <div class="detail-row">
+              <span>Entry ID</span>
+              <strong id="overlayId"></strong>
+          </div>
+
+          <div class="detail-row">
+              <span>Time</span>
+              <strong id="overlayTime"></strong>
+          </div>
+
+      </div>
+
+  </div>
+
+</div>
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
